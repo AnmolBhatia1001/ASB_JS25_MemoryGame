@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js" defer></script> -->
+    <!-- <script src="scriptt.js" defer></script> -->
+    <script src="app.js" defer></script>
+</head>
+<!-- 05:15 AM -->
+<body>
+        <div class="heading">
+            <h1>
+                JavaScript Memory Game
+            </h1>
+        </div>
+        <div class="stat">
+            <div class="score-div">
+                Score : <span id="score"></span>
+            </div>
+
+            <div class="moves-div">
+                Moves : <span id="moves"></span>
+            </div>
+        </div>
+        <div class="card-container">
+
+            <div class="card" data-character="superman">
+                <img class="front-face" src="./images/front-1.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+
+            <div class="card" data-character="superman">
+                <img class="front-face" src="./images/front-1.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+
+            <div class="card" data-character="batman">
+                <img class="front-face" src="./images/front-2.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+
+            <div class="card" data-character="batman">
+                <img class="front-face" src="./images/front-2.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+
+            <div class="card" data-character="joker">
+                <img class="front-face" src="./images/front-3.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+
+            <div class="card" data-character="joker">
+                <img class="front-face" src="./images/front-3.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+            
+            <div class="card" data-character="harly">
+                <img class="front-face" src="./images/front-4.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+            
+            <div class="card" data-character="harly">
+                <img class="front-face" src="./images/front-4.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+
+            <div class="card" data-character="batwomen">
+                <img class="front-face" src="./images/front-5.png" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+
+            <div class="card" data-character="batwomen">
+                <img class="front-face" src="./images/front-5.png" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+            
+            <div class="card" data-character="greenarrow">
+                <img class="front-face" src="./images/front-6.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+            
+            <div class="card" data-character="greenarrow">
+                <img class="front-face" src="./images/front-6.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+
+            <div class="card" data-character="flash">
+                <img class="front-face" src="./images/front-7.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+
+            <div class="card" data-character="flash">
+                <img class="front-face" src="./images/front-7.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+
+            <div class="card" data-character="shazam">
+                <img class="front-face" src="./images/front-8.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+
+            <div class="card" data-character="shazam">
+                <img class="front-face" src="./images/front-8.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+
+            <div class="card" data-character="blackadam">
+                <img class="front-face" src="./images/front-9.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+
+            <div class="card" data-character="blackadam">
+                <img class="front-face" src="./images/front-9.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+            
+            <div class="card" data-character="supergirl">
+                <img class="front-face" src="./images/front-10.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+            
+            <div class="card" data-character="supergirl">
+                <img class="front-face" src="./images/front-10.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+
+            <div class="card" data-character="catwomen">
+                <img class="front-face" src="./images/front-11.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+
+            <div class="card" data-character="catwomen">
+                <img class="front-face" src="./images/front-11.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+            
+            <div class="card" data-character="wonderwomen">
+                <img class="front-face" src="./images/front-12.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+            
+            <div class="card" data-character="wonderwomen">
+                <img class="front-face" src="./images/front-12.jpg" alt="front">
+                <img class="back-face" src="./images/back.jpg" alt="back">
+            </div>
+
+            
+        </div>
+</body>
+</html>
